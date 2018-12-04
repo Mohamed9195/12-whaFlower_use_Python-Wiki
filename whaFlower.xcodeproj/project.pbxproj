@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		796478720569764EE206FD3C /* Pods_whaFlower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F4B37F0EB5917DC1A3BFEBD /* Pods_whaFlower.framework */; };
 		7DC8E93E2192880A004FF0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E93D2192880A004FF0D0 /* AppDelegate.swift */; };
 		7DC8E9402192880A004FF0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E93F2192880A004FF0D0 /* ViewController.swift */; };
 		7DC8E9432192880B004FF0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E9412192880B004FF0D0 /* Main.storyboard */; };
 		7DC8E9452192880D004FF0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E9442192880D004FF0D0 /* Assets.xcassets */; };
 		7DC8E9482192880D004FF0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC8E9462192880D004FF0D0 /* LaunchScreen.storyboard */; };
+		7DC8E95021928849004FF0D0 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E94F21928849004FF0D0 /* FlowerClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F4B37F0EB5917DC1A3BFEBD /* Pods_whaFlower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whaFlower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC8E93A2192880A004FF0D0 /* whaFlower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whaFlower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC8E93D2192880A004FF0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC8E93F2192880A004FF0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		7DC8E9442192880D004FF0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DC8E9472192880D004FF0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DC8E9492192880D004FF0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC8E94F21928849004FF0D0 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		C74440174B1790CF01078DE0 /* Pods-whaFlower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whaFlower.release.xcconfig"; path = "Pods/Target Support Files/Pods-whaFlower/Pods-whaFlower.release.xcconfig"; sourceTree = "<group>"; };
+		CE6F47132EC4DD4A90C37F73 /* Pods-whaFlower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whaFlower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whaFlower/Pods-whaFlower.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796478720569764EE206FD3C /* Pods_whaFlower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61024C14247094F7C9496F7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F4B37F0EB5917DC1A3BFEBD /* Pods_whaFlower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DC8E9312192880A004FF0D0 = {
 			isa = PBXGroup;
 			children = (
 				7DC8E93C2192880A004FF0D0 /* whaFlower */,
 				7DC8E93B2192880A004FF0D0 /* Products */,
+				9026B349AB7D51B102967FA9 /* Pods */,
+				61024C14247094F7C9496F7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				7DC8E9442192880D004FF0D0 /* Assets.xcassets */,
 				7DC8E9462192880D004FF0D0 /* LaunchScreen.storyboard */,
 				7DC8E9492192880D004FF0D0 /* Info.plist */,
+				7DC8E94F21928849004FF0D0 /* FlowerClassifier.mlmodel */,
 			);
 			path = whaFlower;
+			sourceTree = "<group>";
+		};
+		9026B349AB7D51B102967FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F47132EC4DD4A90C37F73 /* Pods-whaFlower.debug.xcconfig */,
+				C74440174B1790CF01078DE0 /* Pods-whaFlower.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DC8E94C2192880D004FF0D0 /* Build configuration list for PBXNativeTarget "whaFlower" */;
 			buildPhases = (
+				2325ED6EC67D7A5E69F28244 /* [CP] Check Pods Manifest.lock */,
 				7DC8E9362192880A004FF0D0 /* Sources */,
 				7DC8E9372192880A004FF0D0 /* Frameworks */,
 				7DC8E9382192880A004FF0D0 /* Resources */,
+				46D0FE18AC2E43D4505B9789 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2325ED6EC67D7A5E69F28244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whaFlower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D0FE18AC2E43D4505B9789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-whaFlower/Pods-whaFlower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whaFlower/Pods-whaFlower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DC8E9362192880A004FF0D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC8E95021928849004FF0D0 /* FlowerClassifier.mlmodel in Sources */,
 				7DC8E9402192880A004FF0D0 /* ViewController.swift in Sources */,
 				7DC8E93E2192880A004FF0D0 /* AppDelegate.swift in Sources */,
 			);
@@ -280,8 +361,10 @@
 		};
 		7DC8E94D2192880D004FF0D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6F47132EC4DD4A90C37F73 /* Pods-whaFlower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNP78QVJKX;
 				INFOPLIST_FILE = whaFlower/Info.plist;
@@ -291,6 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MH.whaFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,8 +382,10 @@
 		};
 		7DC8E94E2192880D004FF0D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74440174B1790CF01078DE0 /* Pods-whaFlower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNP78QVJKX;
 				INFOPLIST_FILE = whaFlower/Info.plist;
@@ -309,6 +395,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MH.whaFlower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
